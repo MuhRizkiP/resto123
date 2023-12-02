@@ -209,7 +209,7 @@ img {
 }
 
 .nav__link:hover {
-  color: var(--navigasi-hover);
+  color: var(--title-color);
 }
 
 .nav__toggle {
