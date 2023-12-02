@@ -428,11 +428,26 @@
 
         <div class="menu__container bd-grid">
           <div class="menu__content">
-            <img src="assets/img/plate1.png" alt="" class="menu__img" />
-            <h3 class="menu__name">Barbecue salad</h3>
-            <span class="menu__detail">Delicious dish</span>
-            <span class="menu__preci">$22.00</span>
-            <a href="#" class="button menu__button"><i class="bx bx-cart-alt"></i></a>
+          <?php
+                    include("config/koneksi.php");
+                    $query_select_kategori = $koneksi->query("SELECT * FROM kategori_menu");
+                    while ($result_select_kategori = $query_select_kategori->fetch_object()) {
+                    ?>
+                    <div class="col-lg-6 col-xxl-4 mb-5">
+                        <div class="card bg-light border-0 h-100">
+                            <a href="menu.php?nama_kategori_menu=<?= $result_select_kategori->nama_kategori_menu?>">
+                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-collection"></i></div>
+                                <h2 class="fs-4 fw-bold"><?= $result_select_kategori->nama_kategori_menu?></h2>
+                                <!-- <p class="mb-0">With Bootstrap 5, we've created a fresh new layout for this template!</p> -->
+                                <img class="img-fluid rounded-3" src="assets/image/kategori_menu/<?= $result_select_kategori->foto_kategori_menu?>" alt="">
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <?php
+                    }
+                    ?>
           </div>
 
           <div class="menu__content">
