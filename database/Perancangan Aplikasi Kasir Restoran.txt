@@ -1,0 +1,69 @@
+1. Aplikasi yang akan dibuat
+	Aplikasi Kasir Restoran Sederhana
+	(Penjualan makanan dan minuman)
+
+2. Yang menggunakan sistem
+	admin, kasir
+
+3. Yang dapat dilakukan oleh admin pada sitem
+	- login
+	- mengelola data kategori menu
+	- mengelola data menu
+	- mengelola data user
+	- mengelola data role user
+	- melihat data transaksi
+	- mencetak laporan transaksi
+
+4. Yang dapat dilakukan oleh guru pada sitem
+	- login
+	- melakukan transaksi
+	- mencetak invoice transaksi
+	- mencetak laporan transaksi
+
+5. Perancangan database
+
+	---Master--------------------------------------------------
+	
+	Nama Tabel 	-->> kategori_menu 
+	Struktur Tabel	-->> id_kategori_menu	-> int - auto increment - primary key
+			     nama_kategori_menu	-> varchar(15)
+
+	Nama Tabel 	-->> menu
+	Struktur tabel	-->> id_menu		-> int - auto increment - primary key
+			     id_kategori_menu	-> int - foreign key (id primary key dari tabel kategori_menu)
+			     nama_menu		-> varchar(30)
+			     deskripsi_menu	-> varchar(255)
+			     harga_menu		-> int
+			     status_menu	-> enum('tersedia','habis')
+	
+	Nama Tabel 	-->> role_user
+	Struktur Tabel	-->> id_role_user	-> int - auto increment - primary key
+			     nama_role_user	-> varchar(5)
+
+	Nama Tabel 	-->> user
+	Struktur Tabel	-->> id_user		-> int - auto increment - primary key
+			     id_role_user	-> int - foreign key (id primary key dari tabel role_user)
+			     nama_user		-> varchar(30)
+			     username		-> varchar(30)
+			     password		-> varchar(255)
+	
+	---Transaksi-------------------------------------------------------------
+	Nama Tabel 	-->> transaksi
+	Struktur Tabel	-->> id_transaksi	-> int - auto increment - primary key
+			     waktu_transaksi	-> datetime
+			     nomor_invoice	-> varchar(30)
+			     grand_total_harga	-> int
+			     nama_pembeli	-> varchar(30)
+			     status_transaksi	-> enum('selesai','onproses')
+
+	Nama Tabel 	-->> detail_transaksi
+	Struktur Tabel	-->> id_detail_transaksi -> int - auto increment - primary key
+			     id_transaksi	 -> int - foreign key (id primary key dari tabel transaksi)
+			     id_menu		 -> int - foreign key (id primary key dari tabel menu)
+			     jumlah_menu	 -> int
+			     total_harga	 -> int
+
+6. Implementasi Program
+	- Create Database Mysql
+	- Create Front End Admin Dashboard Management
+	- Create Back End Admin Dashboard Management
