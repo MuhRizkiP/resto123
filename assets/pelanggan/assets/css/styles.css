@@ -16,6 +16,7 @@
   --navigasi-text: white;
   --navigasi-hover: #e7b307;
   --judulatas: #bf0f1e;
+  --text-gelap: white;
 
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
@@ -74,6 +75,7 @@ body.dark-theme {
   --body-color: #1d2521;
   --container-color: #27302c;
   --judulatas: #e7b307;
+  --text-gelap: black;
 }
 
 /*========== Button Dark/Light ==========*/
@@ -179,7 +181,7 @@ img {
     width: 100%;
     padding: 1.5rem 0 1rem;
     text-align: center;
-    background-color: var(--body-color);
+    background-color: var(--judulatas);
     transition: 0.4s;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 0 0 1rem 1rem;
@@ -194,12 +196,12 @@ img {
 .nav__link,
 .nav__logo,
 .nav__toggle {
-  color: var(--navigasi-text);
+  color: var(--text-gelap);
   font-weight: var(--font-medium);
 }
 
 .nav__logo:hover {
-  color: var(--navigasi-hover);
+  color: var(--text-gelap);
 }
 
 .nav__link {
@@ -207,7 +209,7 @@ img {
 }
 
 .nav__link:hover {
-  color: var(--navigasi-hover);
+  color: var(--text-gelap);
 }
 
 .nav__toggle {
@@ -222,7 +224,7 @@ img {
 
 /* Active menu */
 .active-link {
-  color: var(--navigasi-hover);
+  color: var(--text-gelap);
 }
 
 /* Change background header */
@@ -239,7 +241,7 @@ img {
   justify-content: center;
   align-items: center;
   padding: 0.3rem;
-  background: rgba(6, 156, 84, 0.5);
+  background: var(--judulatas);
   border-radius: 0.4rem;
   z-index: var(--z-tooltip);
   transition: 0.4s;
@@ -252,7 +254,7 @@ img {
 
 .scrolltop__icon {
   font-size: 1.8rem;
-  color: var(--body-color);
+  color: var(--text-gelap);
 }
 
 /* Show scrolltop */
