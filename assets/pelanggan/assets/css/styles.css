@@ -159,7 +159,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #bf0f1e;
+  background-color: var(--judulatas);
 }
 
 /*========== NAV ==========*/
@@ -287,7 +287,7 @@ img {
 /*========== BUTTONS ==========*/
 .button {
   display: inline-block;
-  background-color: var(--first-color);
+  background-color: var(--judulatas);
   color: #fff;
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
