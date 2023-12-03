@@ -409,17 +409,19 @@
             </div>
         </section>
     </main>
-
+    <center>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d833.8066346598481!2d106.99760947131367!3d-6.227410823404687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d2fa6a03dcd%3A0x125218330517135c!2sMcDonald&#39;s!5e0!3m2!1sid!2sid!4v1701535367832!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </center>
     <!--========== FOOTER ==========-->
     <footer class="footer section bd-container">
         <div class="footer__container bd-grid">
             <div class="footer__content">
-                <a href="#" class="footer__logo">Tasty Food</a>
-                <span class="footer__description">Restaurant</span>
+                <a href="#" class="footer__logo">MC Donald</a>
+                <span class="footer__description">Fast Food Restaurant</span>
                 <div>
-                    <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
-                    <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
-                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    <a href="http://www.facebook.com/McDonaldsID" class="footer__social"><i class="bx bxl-facebook"></i></a>
+                    <a href="http://instagram.com/mcdonaldsid" class="footer__social"><i class="bx bxl-instagram"></i></a>
+                    <a href="https://twitter.com/mcdonalds_id" class="footer__social"><i class="bx bxl-twitter"></i></a>
                 </div>
             </div>
 
@@ -436,32 +438,34 @@
             <div class="footer__content">
                 <h3 class="footer__title">Information</h3>
                 <ul>
-                    <li><a href="#" class="footer__link">Event</a></li>
-                    <li><a href="#" class="footer__link">Contact us</a></li>
-                    <li><a href="#" class="footer__link">Privacy policy</a></li>
-                    <li><a href="#" class="footer__link">Terms of services</a></li>
+                    <li><a href="#" class="footer__link">Contact Me</a></li>
+                    <div>
+                        <a href="http://www.facebook.com/" class="footer__social"><i class="bx bxl-facebook"></i></a>
+                        <a href="http://instagram.com/" class="footer__social"><i class="bx bxl-instagram"></i></a>
+                        <a href="https://twitter.com/" class="footer__social"><i class="bx bxl-twitter"></i></a>
+                    </div>
                 </ul>
             </div>
 
             <div class="footer__content">
                 <h3 class="footer__title">Adress</h3>
                 <ul>
-                    <li>Lima - Peru</li>
-                    <li>Jr Union #999</li>
-                    <li>999 - 888 - 777</li>
-                    <li>tastyfood@email.com</li>
+                    <li>Villa Mas Indah Block A</li>
+
+                    <li>0887-1704-606</li>
+
                 </ul>
             </div>
         </div>
 
-        <p class="footer__copy">&#169; 2020 Bedimcode. All right reserved</p>
+        <p class="footer__copy">&#169; 2023 Muhamad Rizki Pratama. All right reserved</p>
     </footer>
 
     <!--========== SCROLL REVEAL ==========-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!--========== MAIN JS ==========-->
-    <script src="assets/js/main.js"></script>
+    <script src="pelanggan/assets/js/main.js"></script>
 </body>
 
 </html>
