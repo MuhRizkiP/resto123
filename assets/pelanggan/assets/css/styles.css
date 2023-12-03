@@ -365,7 +365,7 @@ img {
 }
 
 .menu__img {
-  width: 100px;
+  width: 500px;
   align-self: center;
   margin-bottom: var(--mb-2);
 }
@@ -549,14 +549,15 @@ img {
   }
 
   .menu__container {
-    grid-template-columns: repeat(3, 210px);
+    grid-template-columns: repeat(2, 210px);
     column-gap: 4rem;
+    
   }
   .menu__content {
     padding: 1.5rem;
   }
   .menu__img {
-    width: 130px;
+    width: 250px;
   }
 
   .app__store {

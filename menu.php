@@ -1,135 +1,164 @@
 <?php
 include("config/koneksi.php");
-if (isset($_GET['nama_kategori_menu'])) {
+
 
 ?>
-    <!DOCTYPE html>
-    <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/pelanggan/assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="assets/pelanggan/css/styles.css" rel="stylesheet" />
-    </head>
+<!DOCTYPE html>
+<html lang="en">
 
-    <body>
-        <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg text-danger" style="background-color: red;">
-            <div class="container px-lg-5">
-                <a class="navbar-brand text-white" href="#!">Resto 123</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item "><a class="nav-link active text-white" aria-current="page" href="#!">Home</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="#!">About</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="#!">Contact</a></li>
-                    </ul>
-                </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--========== BOX ICONS ==========-->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/pelanggan/assets/css/styles.css" />
+
+    <title>Responsive website food</title>
+</head>
+
+<body>
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class="bx bx-chevron-up scrolltop__icon"></i>
+    </a>
+
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo"><img src="assets/image/mcdlogo.png" alt="" width="50" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" /></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.php" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="" class="nav__link" disabled>About</a></li>
+                    <li class="nav__item"><a href="" class="nav__link" disabled>Services</a></li>
+                    <li class="nav__item"><a href="menu.php?nama_kategori_menu=" class="nav__link" disabled>Kategori Menu</a></li>
+                    <li class="nav__item"><a href="" class="nav__link" disabled>Contact us</a></li>
+
+                    <li><i class="bx bx-moon change-theme" id="theme-button"></i></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-menu"></i>
             </div>
         </nav>
-        <!-- Header-->
+    </header>
 
-        <div class="mb-5">
-            <div style="background-image: url('assets/image/mcdonalds.jpg');background-repeat:no-repeat;background-position:center;width:50;" class="p-4 bg-light rounded-3 text-center">
-                <div class="" style="margin: 29rem;">
-                    <h1 class="display-5 fw-bold"></h1>
-                    <!-- <p class="fs-4">Bootstrap utility classes are used to create this jumbotron since the old component has been removed from the framework. Why create custom CSS when you can use utilities?</p> -->
-                    <!-- <a class="btn btn-primary btn-lg" href="#!">Call to action</a> -->
-                </div>
-            </div>
-        </div>
+    <main class="l-main">
 
-        <!-- Page Content-->
-        <section class="pt-4">
-            <div class="container px-lg-5">
-                <!-- Page Features-->
-                <div class="row gx-lg-5">
-
-                    <!-- isi page -->
+        <!--========== LIST Kategori MENU : Makanan,Minuman,Snack, ==========-->
+        <section class="menu section bd-container" id="menu">
+            <form action="" method="get">
+                <h2 class="section-title">Pilihan Kategori Menu</h2>
+                <center><a href="menu.php?nama_kategori_menu=" class="nav__link" style="background-color: black;">Refresh Kategori Menu</a></center>
+                <div class="menu__container bd-grid">
                     <?php
-                    $nama_kategori_menu = $_GET['nama_kategori_menu'];
-                    $query = $koneksi->query("SELECT * FROM menu JOIN kategori_menu ON menu.id_kategori_menu = kategori_menu.id_kategori_menu
-                                              WHERE kategori_menu.nama_kategori_menu = '$nama_kategori_menu'");
-                    while ($result = $query->fetch_object()) {
-                    ?>
-                        <div class="col-lg-6 col-xxl-4 mb-5">
-                            <div class="card bg-light border-0 h-100">
 
-                                <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                    <div class="feature bg-success bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-collection"></i></div>
-                                    <h2 class="fs-4 fw-bold"><?= $result->nama_menu ?></h2>
-                                    <!-- <p class="mb-0">With Bootstrap 5, we've created a fresh new layout for this template!</p> -->
-                                    <img class="img-fluid rounded-3" src="assets/image/menu/<?= $result->foto_menu ?>" alt="">
-                                </div>
-                                <h4 style="text-align: center;padding-bottom: 2px;"><?= $result->deskripsi_menu ?></h4>
-                                <h2 style="text-align: center;padding-bottom: 2px;"><?= $result->harga_menu ?></h2>
-                                <h6 style="text-align: center;padding-bottom: 2px;"><?= $result->status_menu ?></h6>
-                            </div>
+                    $query_select_kategori = $koneksi->query("SELECT * FROM kategori_menu");
+                    while ($result_select_kategori = $query_select_kategori->fetch_object()) {
+                    ?>
+                        <div class="menu__content">
+
+                            <h3 class="menu__name"><?= $result_select_kategori->nama_kategori_menu ?></h3>
+
+                            <a href="menu.php?nama_kategori_menu=<?= $result_select_kategori->nama_kategori_menu ?>" class="button menu__button"><i class="bx bx-cart-alt"></i></a>
                         </div>
                     <?php
                     }
                     ?>
-
                 </div>
-            </div>
-            <!-- back button to index.php -->
-            <div class="backhome">
-                <style>
-                    .backhome{
-                        background-color: pink;
-                        width: 100%;
+                </div>
+            </form>
+        </section>
 
-                    }
-                    .myButton {
-                        background-color: gray;
-                        border: 2px solid black;
-                        color: white;
-                        padding: 15px 32px;
-                        text-align: center;
-                        text-decoration: none;
-                        display: inline-block;
-                        font-size: 16px;
-                        
-                        cursor: pointer;
-                        transition-duration: 0.4s;
-                    }
+        <!-- Menu Berdasarkan Kategori Menu -->
+        <section class="menu section bd-container" id="menu">
 
-                    .backhome .myButton a{
-                        color: white;
-                    }
+            <h2 class="section-title">Pilihan Menu</h2>
+            <div class="menu__tampung bd-grid">
+                <?php
+                $nama_kategori_menu = $_GET['nama_kategori_menu'];
 
-                    .myButton:hover {
-                        background-color: black;
-                    }
-                </style>
-                <center>
-                <a href="index.php"><button class="myButton" onclick="location.href='index.php'">Kembali Ke Home</a></button>
-                </center>
+                if ($nama_kategori_menu == "") {
+                    $query = $koneksi->query("SELECT * FROM menu");
+                } else {
+                    $nama_kategori_menu = $_GET['nama_kategori_menu'];
+                    $query = $koneksi->query("SELECT * FROM menu JOIN kategori_menu ON menu.id_kategori_menu = kategori_menu.id_kategori_menu
+                                              WHERE kategori_menu.nama_kategori_menu = '$nama_kategori_menu'");
+                }
+                while ($result = $query->fetch_object()) {
+                ?>
+
+                    <div class="menu__isi">
+                        <img src="assets/image/menu/<?= $result->foto_menu ?>" alt="" class="menu__img" />
+                        <h3 class="menu__name"><?= $result->nama_menu ?></h3>
+                        <span class="menu__detail"><?= $result->deskripsi_menu ?></span>
+                        <span class="menu__preci"><?= $result->harga_menu ?></span>
+                        <a href="menu.php?nama_kategori_menu=<?= $result->nama_menu ?>" class="button menu__button"><i class="bx bx-cart-alt"></i></a>
+                    </div>
+                <?php
+                }
+                ?>
+
+
+
             </div>
         </section>
-        <!-- Footer-->  
-        <footer class="py-5 bg-success">
-            <div class="container">
-                <p class="m-0 text-center text-white">Copyright &copy; Muhamad Jovi Jauhar Chaniago 2023</p>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">MC Donald</a>
+                    <span class="footer__description">Fast Food Restaurant</span>
+                    <div>
+                        <a href="http://www.facebook.com/McDonaldsID" class="footer__social"><i class="bx bxl-facebook"></i></a>
+                        <a href="http://instagram.com/mcdonaldsid" class="footer__social"><i class="bx bxl-instagram"></i></a>
+                        <a href="https://twitter.com/mcdonalds_id" class="footer__social"><i class="bx bxl-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Delivery</a></li>
+                        <li><a href="#" class="footer__link">Pricing</a></li>
+                        <li><a href="#" class="footer__link">Fast food</a></li>
+                        <li><a href="#" class="footer__link">Reserve your spot</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Information</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Adress</h3>
+                    <ul>
+                        <li>Lima - Peru</li>
+                        <li>Jr Union #999</li>
+                        <li>999 - 888 - 777</li>
+                        <li>tastyfood@email.com</li>
+                    </ul>
+                </div>
             </div>
+
+            <p class="footer__copy">&#169; 2023 Muhamd Rizki Pratama. All right reserved</p>
         </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="assets/landing_page/js/scripts.js"></script>
-    </body>
 
-    </html>
-<?php
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-} else {
-    header("Location:index.php");
-    exit();
-}
-?>
+        <!--========== MAIN JS ==========-->
+        <script src="assets/pelanggan/assets/js/main.js"></script>
+</body>
+
+</html>

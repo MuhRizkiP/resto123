@@ -50,7 +50,7 @@
         <div class="home__data">
           <h1 class="home__title">McDonald</h1>
           <h2 class="home__subtitle">Ada McD, Ada Kita <br /></h2>
-          <a href="#" class="button">View Menu</a>
+          <a href="#menu" class="button">View Menu</a>
         </div>
 
         <img src="assets/image/mcdlogo.png" alt="" style="width: 300px; border-radius: 25%; justify-self: center" />
@@ -70,7 +70,7 @@
           <p class="about__description">
             Makanan yang bersih dan aman untuk dikonsumsi dihasilkan oleh tangan yang bersih pula. Kebersihan restoran kami akan selamanya menjadi prioritas utama kami. Makanan kami melewati pedoman ketat berdasarkan sertifikasi halal.
           </p>
-          <a href="#" class="button">Explore history</a>
+
         </div>
         <img src="assets/image/mcd-stand.jpg" alt="" class="about__img" />
       </div>
@@ -379,7 +379,7 @@
             <h3 class="menu__name"><?= $result_select_kategori->nama_kategori_menu ?></h3>
             <span class="menu__detail"></span>
             <span class="menu__preci"></span>
-            <a href="#" class="button menu__button"><i class="bx bx-cart-alt"></i></a>
+            <a href="menu.php?nama_kategori_menu=<?= $result_select_kategori->nama_kategori_menu ?>" class="button menu__button"><i class="bx bx-cart-alt"></i></a>
           </div>
         <?php
         }
@@ -387,7 +387,7 @@
       </div>
       <center>
         <div class="contact__button" style="margin-top: 25px;">
-          <a href="#" class="button">Lihat Semua Menu</a>
+          <a href="menu.php?nama_kategori_menu=" class="button">Lihat Semua Menu</a>
         </div>
       </center>
       </div>
@@ -399,16 +399,18 @@
         <div class="contact__data">
           <span class="section-subtitle contact__initial">Let's talk</span>
           <h2 class="section-title contact__initial">Contact us</h2>
-          <p class="contact__description">If you want to reserve a table in our restaurant, contact us and we will attend you quickly, with our 24/7 chat service.</p>
+          <p class="contact__description">Kepuasan Anda selalu menjadi prioritas kami</p>
         </div>
 
         <div class="contact__button">
-          <a href="#" class="button">Contact us now</a>
+
         </div>
       </div>
     </section>
   </main>
-
+  <center>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d833.8066346598481!2d106.99760947131367!3d-6.227410823404687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d2fa6a03dcd%3A0x125218330517135c!2sMcDonald&#39;s!5e0!3m2!1sid!2sid!4v1701535367832!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </center>
   <!--========== FOOTER ==========-->
   <footer class="footer section bd-container">
     <div class="footer__container bd-grid">
@@ -435,22 +437,27 @@
       <div class="footer__content">
         <h3 class="footer__title">Information</h3>
         <ul>
-          <li><a href="#" class="footer__link">Contact us</a></li>
+          <li><a href="#" class="footer__link">Contact Me</a></li>
+          <div>
+            <a href="http://www.facebook.com/" class="footer__social"><i class="bx bxl-facebook"></i></a>
+            <a href="http://instagram.com/" class="footer__social"><i class="bx bxl-instagram"></i></a>
+            <a href="https://twitter.com/" class="footer__social"><i class="bx bxl-twitter"></i></a>
+          </div>
         </ul>
       </div>
 
       <div class="footer__content">
         <h3 class="footer__title">Adress</h3>
         <ul>
-          <li>Lima - Peru</li>
-          <li>Jr Union #999</li>
-          <li>999 - 888 - 777</li>
-          <li>tastyfood@email.com</li>
+          <li>Villa Mas Indah Block A</li>
+
+          <li>0887-1704-606</li>
+
         </ul>
       </div>
     </div>
 
-    <p class="footer__copy">&#169; 2020 Bedimcode. All right reserved</p>
+    <p class="footer__copy">&#169; 2023 Muhamad Rizki Pratama. All right reserved</p>
   </footer>
 
   <!--========== SCROLL REVEAL ==========-->
