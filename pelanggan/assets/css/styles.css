@@ -130,7 +130,7 @@ img{
 
 .section-subtitle{
   display: block;
-  color: var(--first-color);
+  color: var(--judulatas);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-1);
 }
@@ -138,7 +138,7 @@ img{
 /*========== LAYOUT ==========*/
 .bd-container{
   max-width: 960px;
-  width: calc(100% - 2rem);
+  width: calc(100% - 2%);
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
 }
@@ -319,13 +319,13 @@ img{
 .services__img{
   width: 64px;
   height: 64px;
-  fill: var(--first-color);
+  fill: var(--judulatas);
   margin-bottom: var(--mb-2);
 }
 
 .services__title{
   font-size: var(--h3-font-size);
-  color: var(--title-color);
+  color: var(--judulatas);
   margin-bottom: var(--mb-1);
 }
 
@@ -334,6 +334,56 @@ img{
 }
 
 /*========== MENU ==========*/
+.kmenu__container{
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+}
+
+.kmenu__content{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--container-color);
+  border-radius: .5rem;
+  box-shadow: 0 2px 4px rgba(3,74,40,.15);
+  padding: .75rem;
+}
+
+.kmenu__img{
+  width: 100px;
+  align-self: center;
+  margin-bottom: var(--mb-2);
+}
+
+.kmenu__name, .menu__preci{
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+
+.kmenu__name{
+  font-size: var(--normal-font-size);
+}
+
+.kmenu__detail{
+  font-size: var(--small-font-size);
+}
+.kmenu__preci{
+  font-size: large;
+}
+.kmenu__detail{
+  margin-bottom: var(--mb-1);
+}
+
+.kmenu__button{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  padding: .625rem .813rem;
+  border-radius: .5rem 0 .5rem 0;
+}
+
+/* MENU TEST */
 .menu__container{
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
@@ -364,10 +414,12 @@ img{
   font-size: var(--normal-font-size);
 }
 
-.menu__detail, .menu__preci{
+.menu__detail{
   font-size: var(--small-font-size);
 }
-
+.menu__preci{
+  font-size: large;
+}
 .menu__detail{
   margin-bottom: var(--mb-1);
 }
@@ -380,6 +432,7 @@ img{
   padding: .625rem .813rem;
   border-radius: .5rem 0 .5rem 0;
 }
+
 
 /*========== APP ==========*/
 .app__data{
@@ -528,7 +581,7 @@ img{
   }
 
   .menu__container{
-    grid-template-columns: repeat(3, 210px);
+    grid-template-columns: repeat(2, 450px);
     column-gap: 4rem;
   }
   .menu__content{
@@ -547,7 +600,7 @@ img{
   .bd-container{
     margin-left: auto;
     margin-right: auto;
-  }
+  } 
 
   .home__img{
     width: 500px;

@@ -1,3 +1,9 @@
+<!-- 
+Nama  : Muhamad Rizki Pratama
+Kelas : XII Rpl4
+Mapel : PWEB 
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +17,7 @@
     <!--========== CSS ==========-->
     <link rel="stylesheet" href="pelanggan/assets/css/styles.css">
 
-    <title>Responsive website food</title>
+    <title>Restoran McD Rizki</title>
 </head>
 
 <body>
@@ -392,6 +398,10 @@
                 </div>
             </center>
             </div>
+            <center>
+                <h2 class="section-title" style="padding-top: 30px;">Kunjungi Toko Kami</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d833.8066346598481!2d106.99760947131367!3d-6.227410823404687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d2fa6a03dcd%3A0x125218330517135c!2sMcDonald&#39;s!5e0!3m2!1sid!2sid!4v1701535367832!5m2!1sid!2sid" width="600" height="450" style="border:0;padding-top:20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </center>
         </section>
 
         <!--========== CONTACT US ==========-->
@@ -399,8 +409,14 @@
             <div class="contact__container bd-grid">
                 <div class="contact__data">
                     <span class="section-subtitle contact__initial">Let's talk</span>
-                    <h2 class="section-title contact__initial">Contact us</h2>
-                    <p class="contact__description">Kepuasan Anda selalu menjadi prioritas kami</p>
+                    <h2 class="section-title contact__initial">Contact Us</h2>
+                    <p class="contact__description">
+                    <div>
+                    <a href="http://www.facebook.com/McDonaldsID" class="footer__social"><i class="bx bxl-facebook">McD facebook</i></a>
+                    <a href="http://instagram.com/mcdonaldsid" class="footer__social"><i class="bx bxl-instagram">McD instagram</i></a>
+                    <a href="https://twitter.com/mcdonalds_id" class="footer__social"><i class="bx bxl-twitter">McD Twitter</i></a>
+                </div>
+                    </p>
                 </div>
 
                 <div class="contact__button">
@@ -409,9 +425,7 @@
             </div>
         </section>
     </main>
-    <center>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d833.8066346598481!2d106.99760947131367!3d-6.227410823404687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d2fa6a03dcd%3A0x125218330517135c!2sMcDonald&#39;s!5e0!3m2!1sid!2sid!4v1701535367832!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </center>
+
     <!--========== FOOTER ==========-->
     <footer class="footer section bd-container">
         <div class="footer__container bd-grid">
@@ -448,8 +462,10 @@
             </div>
 
             <div class="footer__content">
-                <h3 class="footer__title">Adress</h3>
+                <h3 class="footer__title">Pembuat</h3>
                 <ul>
+                    <li>Muhamad Rizki Pratama</li>
+                    <li>XII RPL4</li>
                     <li>Villa Mas Indah Block A</li>
 
                     <li>0887-1704-606</li>
