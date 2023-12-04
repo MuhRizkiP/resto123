@@ -1,3 +1,8 @@
+<!-- 
+Nama  : Muhamad Rizki Pratama
+Kelas : XII Rpl4
+Mapel : PWEB 
+-->
 <?php
 include("config/koneksi.php");
 
@@ -98,7 +103,7 @@ include("config/koneksi.php");
                         <img src="assets/image/menu/<?= $result->foto_menu ?>" alt="" class="menu__img" />
                         <h3 class="menu__name"><?= $result->nama_menu ?></h3>
                         <span class="menu__detail"><?= $result->deskripsi_menu ?></span>
-                        <span class="menu__preci">RP <?= number_format($result->harga_menu,0 ,".",".")?></span>
+                        <span class="menu__preci">RP <?= number_format($result->harga_menu, 0, ".", ".") ?></span>
                         <a href="menu.php?nama_kategori_menu=<?= $result->nama_menu ?>" class="button menu__button"><i class="bx bx-cart-alt"></i></a>
                     </div>
                 <?php
@@ -110,55 +115,56 @@ include("config/koneksi.php");
 
 
         <!--========== FOOTER ==========-->
-    <footer class="footer section bd-container">
-        <div class="footer__container bd-grid">
-            <div class="footer__content">
-                <a href="#" class="footer__logo">MC Donald</a>
-                <span class="footer__description">Fast Food Restaurant</span>
-                <div>
-                    <a href="http://www.facebook.com/McDonaldsID" class="footer__social"><i class="bx bxl-facebook"></i></a>
-                    <a href="http://instagram.com/mcdonaldsid" class="footer__social"><i class="bx bxl-instagram"></i></a>
-                    <a href="https://twitter.com/mcdonalds_id" class="footer__social"><i class="bx bxl-twitter"></i></a>
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">MC Donald</a>
+                    <span class="footer__description">Fast Food Restaurant</span>
+                    <div>
+                        <a href="http://www.facebook.com/McDonaldsID" class="footer__social"><i class="bx bxl-facebook"></i></a>
+                        <a href="http://instagram.com/mcdonaldsid" class="footer__social"><i class="bx bxl-instagram"></i></a>
+                        <a href="https://twitter.com/mcdonalds_id" class="footer__social"><i class="bx bxl-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Delivery</a></li>
+                        <li><a href="#" class="footer__link">Pricing</a></li>
+                        <li><a href="#" class="footer__link">Fast food</a></li>
+                        <li><a href="#" class="footer__link">Reserve your spot</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Information</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Contact Me</a></li>
+                        <div>
+
+                            <a href="https://www.instagram.com/ikuzir_/" class="footer__social"><i class="bx bxl-instagram"></i></a>
+
+                        </div>
+                    </ul>
+                </div>
+
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Pembuat</h3>
+                    <ul>
+                        <li>Muhamad Rizki Pratama</li>
+                        <li>XII RPL4</li>
+                        <li>Villa Mas Indah Block A</li>
+
+                        <li>0887-1704-606</li>
+
+                    </ul>
                 </div>
             </div>
 
-            <div class="footer__content">
-                <h3 class="footer__title">Services</h3>
-                <ul>
-                    <li><a href="#" class="footer__link">Delivery</a></li>
-                    <li><a href="#" class="footer__link">Pricing</a></li>
-                    <li><a href="#" class="footer__link">Fast food</a></li>
-                    <li><a href="#" class="footer__link">Reserve your spot</a></li>
-                </ul>
-            </div>
-
-            <div class="footer__content">
-                <h3 class="footer__title">Information</h3>
-                <ul>
-                    <li><a href="#" class="footer__link">Contact Me</a></li>
-                    <div>
-                        <a href="http://www.facebook.com/" class="footer__social"><i class="bx bxl-facebook"></i></a>
-                        <a href="http://instagram.com/" class="footer__social"><i class="bx bxl-instagram"></i></a>
-                        <a href="https://twitter.com/" class="footer__social"><i class="bx bxl-twitter"></i></a>
-                    </div>
-                </ul>
-            </div>
-
-            <div class="footer__content">
-                <h3 class="footer__title">Pembuat</h3>
-                <ul>
-                    <li>Muhamad Rizki Pratama</li>
-                    <li>XII RPL4</li>
-                    <li>Villa Mas Indah Block A</li>
-
-                    <li>0887-1704-606</li>
-
-                </ul>
-            </div>
-        </div>
-
-        <p class="footer__copy">&#169; 2023 Muhamad Rizki Pratama. All right reserved</p>
-    </footer>
+            <p class="footer__copy">&#169; 2023 Muhamad Rizki Pratama. All right reserved</p>
+        </footer>
 
         <!--========== SCROLL REVEAL ==========-->
         <script src="https://unpkg.com/scrollreveal"></script>

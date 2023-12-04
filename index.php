@@ -60,7 +60,7 @@ Mapel : PWEB
                     <a href="#menu" class="button">View Menu</a>
                 </div>
 
-                <img src="assets/image/mcdlogo.png" alt="" style="width: 300px; border-radius: 25%; justify-self: center" />
+                <img src="assets/image/mcdlogo.png" alt="" style="width:fit-content; border-radius: 25%; justify-self: center" />
             </div>
         </section>
 
@@ -412,10 +412,10 @@ Mapel : PWEB
                     <h2 class="section-title contact__initial">Contact Us</h2>
                     <p class="contact__description">
                     <div>
-                    <a href="http://www.facebook.com/McDonaldsID" class="footer__social"><i class="bx bxl-facebook">McD facebook</i></a>
-                    <a href="http://instagram.com/mcdonaldsid" class="footer__social"><i class="bx bxl-instagram">McD instagram</i></a>
-                    <a href="https://twitter.com/mcdonalds_id" class="footer__social"><i class="bx bxl-twitter">McD Twitter</i></a>
-                </div>
+                        <a href="http://www.facebook.com/McDonaldsID" class="footer__social"><i class="bx bxl-facebook">McD facebook</i></a>
+                        <a href="http://instagram.com/mcdonaldsid" class="footer__social"><i class="bx bxl-instagram">McD instagram</i></a>
+                        <a href="https://twitter.com/mcdonalds_id" class="footer__social"><i class="bx bxl-twitter">McD Twitter</i></a>
+                    </div>
                     </p>
                 </div>
 
@@ -454,9 +454,9 @@ Mapel : PWEB
                 <ul>
                     <li><a href="#" class="footer__link">Contact Me</a></li>
                     <div>
-                        <a href="http://www.facebook.com/" class="footer__social"><i class="bx bxl-facebook"></i></a>
-                        <a href="http://instagram.com/" class="footer__social"><i class="bx bxl-instagram"></i></a>
-                        <a href="https://twitter.com/" class="footer__social"><i class="bx bxl-twitter"></i></a>
+
+                        <a href="https://www.instagram.com/ikuzir_/" class="footer__social"><i class="bx bxl-instagram"></i></a>
+
                     </div>
                 </ul>
             </div>
