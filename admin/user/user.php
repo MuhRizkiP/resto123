@@ -15,7 +15,7 @@ include('../login/login-session-cek.php');
           <th>password</th>
           <th>photo user</th>
         
-          <th></th>
+          <th>Action</th>
      </tr>
      <?php
      $no = 1;
@@ -30,16 +30,16 @@ include('../login/login-session-cek.php');
                <td><?= $hasil->nama_role_user ?></td>
                <td><?= $hasil->nama_user ?></td>
                <td><?= $hasil->username ?></td>
-               <td><?= $hasil->password ?></td>
+               <td>******</td>
                <td><img width="100" src="../../assets/image/user/<?= $hasil->photo_user ?>" alt=""></td>
 
                <td>
                     <a style="text-decoration:none" href="?page=user-edit&id_user=<?= $hasil->id_user?>">
-                    <i class="fa-solid fa-pen-to-square fa-sm" style="color: #005eff;"></i>
+                    <i class="fas fa-edit"></i>
                     </a>
                     |
                     <a style="text-decoration:none" href="?page=user-delete&id_user=<?= $hasil->id_user ?>">
-                         <i class="fa-solid fa-trash fa-sm" style="color: #ff0000;"></i>
+                    <i class="fas fa-trash"></i>
                     </a>|
                </td>
           </tr>

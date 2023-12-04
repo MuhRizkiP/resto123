@@ -36,8 +36,8 @@ $hasil = $query->fetch_object();
 
                     <input class="form-control mb-2" value="<?= $hasil->nama_user ?>" name="nama_user" placeholder="Nama User">
                     <input class="form-control mb-2" value="<?= $hasil->username ?>" name="username" placeholder="username">
-                    <input class="form-control mb-2" type="number" name="password" placeholder="password">
-                    <div class="form-text">Kosongkan saja jika password tidak diisi.</div>
+                    <input class="form-control mb-2" type="text" name="password" placeholder="<?= $hasil->password ?>" required>
+                    
                     <input class="form-control mb-2" type="file" name="photo_user">
                     <div class="text-from mb-3">*Masukan File Gambar</div>
                     <div class="d-grid">

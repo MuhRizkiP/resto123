@@ -34,10 +34,10 @@ include("config/koneksi.php");
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="index.php" class="nav__link active-link">Home</a></li>
-                    <li class="nav__item"><a href="" class="nav__link" disabled>About</a></li>
-                    <li class="nav__item"><a href="" class="nav__link" disabled>Services</a></li>
+                    <li class="nav__item"><a href="index.php" class="nav__link" disabled>About</a></li>
+                    <li class="nav__item"><a href="index.php" class="nav__link" disabled>Services</a></li>
                     <li class="nav__item"><a href="menu.php?nama_kategori_menu=" class="nav__link" disabled>Kategori Menu</a></li>
-                    <li class="nav__item"><a href="" class="nav__link" disabled>Contact us</a></li>
+                    <li class="nav__item"><a href="index.php" class="nav__link" disabled>Contact us</a></li>
 
                     <li><i class="bx bx-moon change-theme" id="theme-button"></i></li>
                 </ul>

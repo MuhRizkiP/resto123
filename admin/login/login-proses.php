@@ -17,6 +17,7 @@ if (mysqli_num_rows($query) > 0)
           $_SESSION['id_user']     = $result->id_user;
           $_SESSION['nama_user']   = $result->nama_user;
           $_SESSION['role']        = $result->nama_role_user;
+          $_SESSION['photo_user']        = $result->photo_user;
           ?>
           <script>
                window.alert('Login BERHASIL !');

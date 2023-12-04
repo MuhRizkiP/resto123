@@ -4,12 +4,12 @@ $nama_role_user         = $_POST['nama_role_user'];
 $nama_user              = $_POST['nama_user'];
 $username               = $_POST['username'];
 $password               = $_POST['password'];
-$nama_foto              = $_FILES['photo_user']['name'];   
+$nama_foto              = $_FILES['photo_user']['name'];
 
 
 $target_lokasi         = "../../assets/image/user/";
 
-move_uploaded_file($_FILES['photo_user']['tmp_name'],$target_lokasi.$nama_foto);
+move_uploaded_file($_FILES['photo_user']['tmp_name'], $target_lokasi . $nama_foto);
 
 if ($_POST) {
     $id_user            = $_POST['id_user'];
@@ -17,7 +17,7 @@ if ($_POST) {
     $nama_user          = $_POST['nama_user'];
     $username           = $_POST['username'];
     $password           = $_POST['password'];
-    $nama_foto          = $_FILES['photo_user']['name'];   
+    $nama_foto          = $_FILES['photo_user']['name'];
 
     $password = password_hash($password, PASSWORD_BCRYPT);
 
