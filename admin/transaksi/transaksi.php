@@ -32,7 +32,7 @@ include('../login/login-session-cek.php');
       <td><?= $no ?></td>
       <td><?= $hasil_select_tr->waktu_transaksi ?></td>
       <td><?= $hasil_select_tr->nomor_transaksi ?></td>
-      <td><?= $hasil_select_tr->grand_total_harga ?></td>
+      <td>Rp. <?= number_format($hasil_select_tr->grand_total_harga, 2, ".", ".") ?></td>
       <td><?= $hasil_select_tr->nama_pembeli ?></td>
       <td><?= $hasil_select_tr->nama_user ?></td>
       <td><?= $hasil_select_tr->status_transaksi ?></td>

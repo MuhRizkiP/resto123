@@ -74,27 +74,21 @@ $waktu_transaksi = date('Y-m-d H:i:s', time());
             <td class="desc"><?= $hasil_select_dt->deskripsi_menu ?></td>
             <td width="20%" class="unit">Rp. <?= number_format($hasil_select_dt->harga_menu, 2, ".", ".") ?></td>
             <td class="qty"><?= $hasil_select_dt->jumlah_menu ?></td>
-            <td width="20%" class="total">Rp. <?= number_format($hasil_select_dt->harga_menu, 2, ".", ".") ?></td>
+            <td width="20%" class="total">Rp. <?= number_format($hasil_select_dt->total_harga, 2, ".", ".") ?></td>
           </tr>
         <?php
           $no++;
         }
         ?>
-      </tbody>>
+      </tbody>
       <tfoot>
         <tr>
           <td colspan="2"></td>
           <td colspan="2">GRAND TOTAL</td>
-          <?php
-          while ($hasil_select_tr = $query_select_tr->fetch_object()) {
 
-
-          ?>
-            <td>Rp. <?= number_format($hasil_select_tr->grand_total_harga, 2, ".", ".") ?></td>
+          <td>Rp. <?= number_format($hasil_select_tr->grand_total_harga, 2, ".", ".") ?></td>
         </tr>
-      <?php
-          }
-      ?>
+
       </tfoot>
     </table>
     <div id="thanks">Thank you!</div>

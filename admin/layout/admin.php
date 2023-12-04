@@ -9,7 +9,7 @@ include('../login/login-session-cek.php');
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AdminLTE 3 | Dashboard 2</title>
+  <title>AdminLTE EditByRizki</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
@@ -361,7 +361,7 @@ include('../login/login-session-cek.php');
                             case 'transaksi_detail-update':
                               include('../transaksi/transaksi_detail-update.php');
                               break;
-                            case 'transaksi-detail-delete':
+                            case 'transaksi_detail-delete':
                               include('../transaksi/transaksi_detail-delete.php');
                               break;
                             case 'laporan':
@@ -468,13 +468,15 @@ include('../login/login-session-cek.php');
   <script src="../admin-style/plugins/raphael/raphael.min.js"></script>
   <script src="../admin-style/plugins/jquery-mapael/jquery.mapael.min.js"></script>
   <script src="../admin-style/plugins/jquery-mapael/maps/usa_states.min.js"></script>
+  <!-- bootstrap css -->
+  <script src="../../assets/js/bootstrap.bundle.js"></script>
   <!-- ChartJS -->
   <script src="../admin-style/plugins/chart.js/Chart.min.js"></script>
 
   <!-- AdminLTE for demo purposes -->
-  <script src="../admin-style/dist/js/demo.js"></script>
+
   <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-  <script src="../admin-style/dist/js/pages/dashboard2.js"></script>
+
 </body>
 
 </html>
