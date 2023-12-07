@@ -34,7 +34,7 @@ include("config/koneksi.php");
     <!--========== HEADER ==========-->
     <header class="l-header" id="header">
         <nav class="nav bd-container">
-            <a href="#" class="nav__logo"><img src="assets/image/mcdlogo.png" alt="" width="50" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" /></a>
+            <a href="#" class="nav__logo"><img src="assets/image/mondstadt.webp" alt="" width="50" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" /></a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
@@ -85,6 +85,7 @@ include("config/koneksi.php");
         <section class="menu section bd-container" id="menu">
 
             <h2 class="section-title">Pilihan Menu</h2>
+            
             <div class="menu__container bd-grid">
                 <?php
                 $nama_kategori_menu = $_GET['nama_kategori_menu'];

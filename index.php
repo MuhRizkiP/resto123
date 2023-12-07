@@ -30,7 +30,7 @@ Mapel : PWEB
     <!--========== HEADER ==========-->
     <header class="l-header" id="header">
         <nav class="nav bd-container">
-            <a href="#" class="nav__logo"><img src="assets/image/mcdlogo.png" alt="" width="50" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" /></a>
+            <a href="#" class="nav__logo"><img src="assets/image/mondstadt.webp" alt="" width="60" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
@@ -40,7 +40,7 @@ Mapel : PWEB
                     <li class="nav__item"><a href="#menu" class="nav__link">Kategori Menu</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
 
-                    <li><i class="bx bx-moon change-theme" id="theme-button"></i></li>
+
                 </ul>
             </div>
 
@@ -53,21 +53,25 @@ Mapel : PWEB
     <main class="l-main">
         <!--========== HOME ==========-->
         <section class="home" id="home">
-            <div class="home__container bd-container bd-grid">
-                <div class="home__data">
-                    <h1 class="home__title">McDonald</h1>
-                    <h2 class="home__subtitle">Ada McD, Ada Kita <br /></h2>
-                    <a href="#menu" class="button">View Menu</a>
-                </div>
+            <div class="home__bg">
 
-                <img src="assets/image/mcdlogo.png" alt="" style="width:fit-content; border-radius: 25%; justify-self: center" />
+
+                <div class="home__container bd-container bd-grid">
+
+                    <div class="text-informasi">
+                        <div class="home__data">
+                            <h1 class="home__title">Good Hunter</h1>
+                            <a href="#menu" class="button">View Menu</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!--========== ABOUT ==========-->
 
         <section class="about section bd-container" id="about">
-            <div class="about__container bd-grid">
+            <div class="about__container bd-grid-abot">
                 <div class="about__data">
                     <span class="section-subtitle about__initial">About us</span>
                     <h2 class="section-title about__initial">
@@ -75,11 +79,17 @@ Mapel : PWEB
                         tasty food
                     </h2>
                     <p class="about__description">
-                        Makanan yang bersih dan aman untuk dikonsumsi dihasilkan oleh tangan yang bersih pula. Kebersihan restoran kami akan selamanya menjadi prioritas utama kami. Makanan kami melewati pedoman ketat berdasarkan sertifikasi halal.
+                        Good Hunter adalah tempat menarik dan restoran yang terletak di Kota Mondstadt, Starfell Valley, Mondstadt.
+
+                        Mereka menjual makanan sederhana, bahan masakan dan resep masakan. Sara adalah seorang pelayan di sini.
+
+                        Makanan diisi ulang setiap hari, sedangkan bahan masakan diisi ulang setiap 7 hari.
                     </p>
 
                 </div>
-                <img src="assets/image/mcd-stand.jpg" alt="" class="about__img" />
+                <img src="assets/image/mushromsup1.jpg" alt="" class="about__img" />
+                <img src="assets/image/Birthday Icon.jpg" alt="" class="about__img" />
+
             </div>
         </section>
 
@@ -398,32 +408,68 @@ Mapel : PWEB
                 </div>
             </center>
             </div>
-            <center>
-                <h2 class="section-title" style="padding-top: 30px;">Kunjungi Toko Kami</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d833.8066346598481!2d106.99760947131367!3d-6.227410823404687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d2fa6a03dcd%3A0x125218330517135c!2sMcDonald&#39;s!5e0!3m2!1sid!2sid!4v1701535367832!5m2!1sid!2sid" width="600" height="450" style="border:0;padding-top:20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </center>
+
         </section>
 
-        <!--========== CONTACT US ==========-->
-        <section class="contact section bd-container" id="contact">
-            <div class="contact__container bd-grid">
-                <div class="contact__data">
-                    <span class="section-subtitle contact__initial">Let's talk</span>
-                    <h2 class="section-title contact__initial">Contact Us</h2>
-                    <p class="contact__description">
-                    <div>
-                        <a href="http://www.facebook.com/McDonaldsID" class="footer__social"><i class="bx bxl-facebook">McD facebook</i></a>
-                        <a href="http://instagram.com/mcdonaldsid" class="footer__social"><i class="bx bxl-instagram">McD instagram</i></a>
-                        <a href="https://twitter.com/mcdonalds_id" class="footer__social"><i class="bx bxl-twitter">McD Twitter</i></a>
-                    </div>
+        <!-- CONTACt REAL -->
+        <section class="about section bd-container" id="about">
+            <div class="about__container bd-grid">
+                <div class="menu__container">
+                    <span class="section-subtitle about__initial"></span>
+                    <h2 class="section-title about__initial">
+                        Contact Kami
+                    </h2>
+                    <p class="about__description">
+                        Good Hunter adalah tempat menarik dan restoran yang terletak di Kota Mondstadt, (Video Game)
+
                     </p>
+
                 </div>
+                <div class="box-kontak">
+                    <style>
+                        .box-kontak {
+                            padding-top: 39px;
+                            padding-bottom: 41px;
+                            margin-top: 38px;
+                            border: solid 2px #c49a8f;
+                        }
+                    </style>
+                    <ul class="contact_list nav__list">
+                        <li class="nav__item">
+                            Address :
 
-                <div class="contact__button">
+                        </li>
+                        <li class="nav__item">
+                            Villa Mas Indah
 
+                        </li>
+                    </ul>
+                    <ul class="contact_list nav__list">
+                        <li class="nav__item">
+                            Phone :
+
+                        </li>
+                        <li class="nav__item">
+                            +62 887 1704 606
+
+                        </li>
+                    </ul>
+                    <ul class="contact_list nav__list">
+                        <li class="nav__item">
+                            Email
+
+                        </li>
+                        <li class="nav__item">
+                            muhamadrizkipratama.xrpl4.2021@gmail.com
+
+                        </li>
+                    </ul>
                 </div>
             </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.2149439544578!2d107.00813245028257!3d-6.206889444995486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698fcf1a9c49e3%3A0xd3d4ebd04dd8f9a!2sVilla%20Mas%20Indah%20Blok%20A!5e0!3m2!1sid!2sid!4v1701836389191!5m2!1sid!2sid" width="100%" height="450" style="border:0; padding-top: 5%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
+
+
     </main>
 
     <!--========== FOOTER ==========-->

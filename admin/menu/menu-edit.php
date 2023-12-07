@@ -27,7 +27,7 @@ $hasil_menu = $query->fetch_object();
                         ?>
                             </select>
                             <input value="<?= $hasil_menu->nama_menu ?>" class="form-control mb-2" type="text" name="nama_menu" placeholder="nama menu">
-                            <input value="<?= $hasil_menu->deskripsi_menu ?>" class="form-control mb-2" type="text" name="deskripsi_menu" placeholder="deskripsi menu">
+                            <textarea  class="form-control mb-2" name="deskripsi_menu" placeholder="deskripsi menu"><?= $hasil_menu->deskripsi_menu ?>"</textarea>
                             <input value="<?= $hasil_menu->harga_menu ?>" class="form-control mb-2" type="text" name="harga_menu" placeholder="harga menu">
                             <select class="form-control mb-2" name="status_menu">
                                 <option value="tersedia" <?=$hasil_menu->status_menu == 'tersedia' ? 'selected':'' ?> >

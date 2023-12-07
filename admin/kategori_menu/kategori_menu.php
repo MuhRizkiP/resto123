@@ -28,11 +28,11 @@ include('../login/login-session-cek.php');
                </td>
                <td valign="middle">|
                     <a style="text-decoration:none" href="?page=kategori_menu-edit&id_kategori_menu=<?= $hasil->id_kategori_menu ?>">
-                         <i class="fa-solid fa-pen-to-square fa-sm" style="color: #005eff;"></i>
+                         <i class="fas fa-edit"></i>
                     </a>
                     |
                     <a style="text-decoration:none" href="?page=kategori_menu-delete&id_kategori_menu=<?= $hasil->id_kategori_menu ?>">
-                         <i class="fa-solid fa-trash fa-sm" style="color: #ff0000;"></i>
+                         <i class="fas fa-trash"></i>
                     </a>|
                </td>
           </tr>
